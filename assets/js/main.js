@@ -306,7 +306,7 @@
 
 				// Article visible? Hide.
 					if ($body.hasClass('is-article-visible'))
-						$main._hide(true);
+						window.history.back();
 
 			});
 
