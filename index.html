@@ -37,7 +37,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 	</head>
-	<body class="is-preload" oncontextmenu="return false">
+	<body class="is-preload" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -63,10 +63,10 @@
 							<ul>
 								<li><a href="#weekday">평일 📝</a></li>
 								<li><a href="#weekend">주말 및 공휴일 🏖</a></li>
-                <li><a href="#soon">순환5 시내버스 🚌</a></li>
+                <li><a href="#soon" style="padding-right: 15px; padding-left: 23px;">시내버스(아산,천안) 🚌</a></li>
 								<li ><a onclick="javascript:btn()" href="http://smu.busro.net/rsvc/" target="_blank" style="background-color:rgb(116, 185, 255,0.3); ">통학버스 예매 🔖</a></li>
-                <li><a href="#call" style="background-color:rgb(255, 165, 116,0.3); padding-left: 9px;padding-right: 9px;">콜밴 🚐</a></li>
-                <li ><a onclick="javascript:bu()" href="https://www.cheonanterminal.co.kr/timetable" target="_blank" style="background-color:rgb(222, 69, 69,0.3); padding-left: 9px;padding-right: 9px;">고속,시외버스 예매 🚎</a></li>
+                <li><a href="#call" style="background-color:rgb(255, 165, 116,0.3); ">콜밴 🚐</a></li>
+                <li ><a onclick="javascript:bu()" href="https://www.cheonanterminal.co.kr/timetable" target="_blank" style="background-color:rgb(222, 69, 69,0.3); ">고속,시외버스 예매 🚎</a></li>
 			
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -89,15 +89,33 @@
 							</article>
 
               <article id="soon">
-								<h2 class="major">순환5 시내버스 시간표🚌</h2>
-									<a href="순환5.html" onclick="window.open(this.href, '_blank', 'toolbars=no,scrollbars=no'); return false;"><span class="image main" ><img src="images/순환.png" alt="순환5 시간표" style="pointer-events : none;"/><br><h5 class="blinking" align="center">확대하려면 사진을 터치! 🔍</h5></span></a>
+                <h3 class="major">아산역 가는 시내버스 버스 🚌</h3>
+                <h5 align="center">"순환5는 잘 아실거고, 777번 버스의 경우<br>솔루나라는 선문대 동문쪽으로 가셔야합니다."</h5>
+                <div style=" float: right;position: relative; left: -50%;">
+                <h5 align="center" style="font-size:10px; float: left; position: relative; left: 50%;"><a class="turquoise" href="https://m.map.naver.com/bus/station.nhn?stationID=367323#/map" onclick="window.open(this.href, '_blank', 'toolbars=no,scrollbars=no'); return false;"><img src="images/naver.png" alt="navermap" width="40" height="40" align="center"><br>순환5 지도보기<span class="material-icons" style="font-size:16px">
+location_on
+</span></a></h5>
+
+<h5 align="center" style="font-size:10px; float: left; position: relative; left: 50%; padding-left: 20px;"><a class="turquoise" href="https://m.map.naver.com/bus/station.nhn?stationID=352513#/map" onclick="window.open(this.href, '_blank', 'toolbars=no,scrollbars=no'); return false;"><img src="images/naver.png" alt="navermap" width="40" height="40" align="center"><br>777버스 지도보기<span class="material-icons" style="font-size:16px">
+location_on
+</span></a></h5></div>
+<br><br>
+<hr><br>
+<h3 class="major">천안역, 터미널 시내버스 버스 🚌</h3>
+<h5 align="center">"서문쪽에 있으며 <span style="color:red">970번</span>과 <span style="color:red">971번</span> 버스만 가니깐<br>다른버스를 타지않게 주의해주세요!"</h5>
+<h5 align="center" style="font-size:10px;"><a class="turquoise" href="https://m.map.naver.com/bus/station.nhn?stationID=351637" onclick="window.open(this.href, '_blank', 'toolbars=no,scrollbars=no'); return false;"><img src="images/naver.png" alt="navermap" width="40" height="40" align="center"><br>970번 버스,971번 버스 <br>&emsp;지도보기<span class="material-icons" style="font-size:16px">
+location_on
+</span></a></h5>
+<hr><br>
+								<h2 class="major">순환5 시간표 📄</h2>
+									<a href="순환5.html" onclick="window.open(this.href, '_blank', 'toolbars=no,scrollbars=no'); return false;"><span class="image main" style="margin-top: 0px;"><img src="images/순환.png" alt="순환5 시간표" style="pointer-events : none;"/><br><h5 class="blinking" align="center">확대하려면 사진을 터치! 🔍</h5></span></a>
 							</article>
 
               <article id="call">
 								<h2 class="major">콜밴 정보 및 번호 🚐</h2>
-								<h3>📞 천안 콜밴 : <a class="turquoise" href="tel:041-564-7777">041-564-7777 <span class="material-icons" style="font-size:16px">
+								<h3 align="center">📞 천안 콜밴 : <a class="turquoise" href="tel:041-564-7777">041-564-7777 <span class="material-icons" style="font-size:16px">
 phone_forwarded
-</span></a><br><br>
+</span>&emsp;</a><br><br>
                 📞 에이스 콜밴 : <a class="turquoise" href="tel:041-584-7000">041-584-7000 <span class="material-icons" style="font-size:16px">
 phone_forwarded
 </span></a>
@@ -138,7 +156,7 @@ facebook
 								<h2 class="major">셔틀장 위치 📍</h2>
 									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6389.521860597902!2d127.071053!3d36.800282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ad892b5b4bc17%3A0x2a76c466faaff02f!2z7IWU7YuA67KE7IqkIOygleulmOyepQ!5e0!3m2!1sko!2skr!4v1604984975233!5m2!1sko!2skr" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                   <br>
-             <h3 align="center"><a class="turquoise" href="승차장.html" onclick="window.open(this.href, '_blank', 'toolbars=no,scrollbars=no'); return false;">아산역, 천안역 등에서 타는 선문대 승차장 보러가기 🚥</a></h3>
+             <h3 align="center"><a class="turquoise" href="승차장.html" onclick="window.open(this.href, '_blank', 'toolbars=no,scrollbars=no'); return false;">아산역, 천안역 등에서 타는<br>&emsp;&nbsp;선문대 승차장 보러가기 🚥</a></h3>
 							</article>
 
 					</div>
@@ -155,7 +173,7 @@ facebook
 
 		<!-- Scripts -->
       <!--<script type="text/javascript">
-      alert('현재 선문대학교에서 코로나 확진자가 발생하였습니다.\n\n<선문대학교 교무처장>\n교내 코로나19 확진자 발생에 따라 캠퍼스 내 예방을 위해 등교수업은 전체 원격(온라인)수업으로 전환하여 시행함을 안내합니다.\n※ 2020년 11월 18일 부터 별도 공지시까지 ※\n\n( 자세한 내용은 선문대학교 사이트에서 확인하세요. )');
+      alert('멘트 입력');
       </script>-->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
